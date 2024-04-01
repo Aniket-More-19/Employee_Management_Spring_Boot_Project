@@ -1,0 +1,36 @@
+.input-size {
+  width: 30%;
+}
+
+.heading {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+label {
+  text-align: left;
+  width: 30%;
+  font-weight: 500;
+}
+
+.textarea {
+  width: 30%;
+}
+
+.table-margins {
+  margin: 5% 10% 0% 10%;
+}
+.button-addEmp {
+  margin: 5% 0% 0% 10%;
+}
+.see-btn-link {
+  color: rgb(23, 2, 2);
+  text-decoration: none;
+}
+.allEmp-btn-link {
+  color: white;
+  text-decoration: none;
+}
+.seeAllEmp-btn {
+  margin-top: 2%;
+}
