@@ -27,7 +27,7 @@ const EmpInfo = () => {
 
     // making POST api call to spring backend
 
-    fetch(`http://localhost:8080/employee`, {
+    fetch(`http://localhost:8080/saveEmp`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
