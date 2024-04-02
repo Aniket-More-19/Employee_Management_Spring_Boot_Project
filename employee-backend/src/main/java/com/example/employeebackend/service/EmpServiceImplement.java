@@ -5,6 +5,8 @@ import com.example.employeebackend.repository.EmpRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class EmpServiceImplement implements EmpService{
     @Autowired
@@ -15,4 +17,10 @@ public class EmpServiceImplement implements EmpService{
     public Employee saveEmployee(Employee employee) {
         return empRepository.save(employee);
     }
+
+    @Override
+    public List<Employee> getEmployees() {
+        return empRepository.findAll();
+    }
+
 }
