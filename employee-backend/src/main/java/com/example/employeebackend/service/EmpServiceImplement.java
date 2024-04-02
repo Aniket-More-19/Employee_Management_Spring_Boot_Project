@@ -15,12 +15,17 @@ public class EmpServiceImplement implements EmpService{
 
     @Override
     public Employee saveEmployee(Employee employee) {
-        return empRepository.save(employee);
+        return empRepository.save(employee);   // saves employee in db
     }
 
     @Override
     public List<Employee> getEmployees() {
-        return empRepository.findAll();
+        return empRepository.findAll();  // gets all employees from db
     }
 
+    @Override
+    public Employee deleteEmployee(Long empId) {
+        empRepository.deleteById(empId);  // deletes employee by empId, deleteById is void type
+        return null;
+    }
 }

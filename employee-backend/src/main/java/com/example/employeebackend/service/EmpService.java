@@ -11,4 +11,7 @@ public interface EmpService {
 
     // get all employees from database
     List<Employee> getEmployees();
+
+    // deletes employee based on empId
+    Employee deleteEmployee(Long empId);
 }
